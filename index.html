@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Libary</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="direct-btn-container hidden">
+      <button class="add-book-btn">Add new book</button>
+      <button class="go-to-libary-btn">Your Libary</button>
+      <button class="search-btn">Search</button>
+    </div>
+    <form action="submit" class="add-book-form">
+      <h1>Add new book</h1>
+      <div class="inputs-container">
+        <input name="title" type="text" class="title" placeholder="Title"/>
+        <input name="author" type="text" class="author" placeholder="Author"/>
+        <input name="category" type="text" class="category" placeholder="Category"/>
+        <input name="release-year" type="text" class="release-year" placeholder="Release Year"/>
+        <select name="status" type="select" class="status" placeholder="Status">
+            <option selected disabled>Status</option>
+            <option>In progress</option>
+            <option>Pending</option>
+            <option>Finished</option>
+        </select>
+        <input name="comments" type="text" class="comment" placeholder="Comments"/>
+        <div class="form-buttons">
+          <button type="submit" class="submit-book">Add book</button>
+          <button class="cancel-btn">Cancel</button>
+        </div>
+      </div>
+    </form>
+    <div class="libary-container hidden">
+      <div class="libary-book-card">
+        <h1>Title</h1>
+        <h4>Author</h4>
+        <span>Year</span>
+        <span>Status</span>
+        <p>Comments</p>
+        <button class="delete-book-btn">Delete</button>
+        <button class="edit-book-btn">Edit</button>
+      </div>
+    </div>
+    <div class="search-container hidden"></div>
+  </body>
+</html>

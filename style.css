@@ -1,0 +1,90 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --direct-btn-container-width: 50%; 
+    --direct-btn-width: 10em; 
+    --direct-btn-bg: #f4f4f4;
+    --add-book-form-width: 50%; 
+    --border-color: #8b8b8b; 
+    --grid-item-width: 90%; 
+}
+
+body{
+    width:100%;
+    height: 100svh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direct-btn-container{
+  width:var(--direct-btn-container-width);
+  height: calc(var(--direct-btn-container-width) * .75);
+  display:flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.direct-btn-container button {
+    width:var(--direct-btn-width); 
+    height: calc(var(--direct-btn-width) * 0.5); 
+    background-color: var(--direct-btn-bg);
+    border:1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.direct-btn-container > button:hover{
+   background-color: #f4f4f4a5;
+}
+
+.add-book-form{
+    width: var(--add-book-form-width);
+    height: calc(var(--add-book-form-width)*1.5); 
+    padding:1.5em;
+    border: 2px solid var(--border-color); 
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: flex-start;
+}
+
+.inputs-container{
+    width: 100%; 
+    height:80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+}
+
+.inputs-container > input, select{
+    width:var(--grid-item-width);
+    height: 40px; 
+    margin: auto;
+    padding: 0 1em;
+}
+
+.form-buttons{
+    width:var(--grid-item-width);
+    height: 60px;
+    margin:auto; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-buttons > button {
+   width:45%; 
+   height:40px; 
+}
+
+.hidden{
+    display:none; 
+}
