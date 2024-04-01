@@ -22,7 +22,7 @@ body{
     align-items: center;
 }
 
-.direct-btn-container{
+.main-menu{
   width:var(--direct-btn-container-width);
   height: calc(var(--direct-btn-container-width) * .75);
   display:flex; 
@@ -30,7 +30,7 @@ body{
   align-items: center;
 }
 
-.direct-btn-container button {
+.main-menu button {
     width:var(--direct-btn-width); 
     height: calc(var(--direct-btn-width) * 0.5); 
     background-color: var(--direct-btn-bg);
@@ -38,7 +38,7 @@ body{
     cursor: pointer;
 }
 
-.direct-btn-container > button:hover{
+.main-menu > button:hover{
    background-color: #f4f4f4a5;
 }
 

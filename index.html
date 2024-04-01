@@ -9,12 +9,12 @@
     <script src="./index.js" type="module" defer></script>
   </head>
   <body>
-    <div class="direct-btn-container hidden">
-      <button class="add-book-btn">Add new book</button>
-      <button class="go-to-libary-btn">Your Libary</button>
-      <button class="search-btn">Search</button>
+    <div class="main-menu">
+      <button class="redirect-add-book">Add new book</button>
+      <button class="redirect-libary">Your Libary</button>
+      <button class="redirect-search">Search</button>
     </div>
-    <form action="submit" class="add-book-form">
+    <form action="submit" class="add-book-form hidden">
       <h1>Add new book</h1>
       <div class="inputs-container">
         <input name="title" type="text" class="title" placeholder="Title"/>
@@ -30,9 +30,9 @@
         <input name="comments" type="text" class="comment" placeholder="Comments"/>
         <div class="form-buttons">
           <button type="submit" class="submit-book">Add book</button>
-          <button class="cancel-btn">Cancel</button>
         </div>
       </div>
+      <button class="cancel-btn">Cancel</button>
     </form>
     <div class="libary-container hidden">
       <div class="libary-book-card">
@@ -44,7 +44,11 @@
         <button class="delete-book-btn">Delete</button>
         <button class="edit-book-btn">Edit</button>
       </div>
+      <button class="cancel-btn">Cancel</button>
     </div>
-    <div class="search-container hidden"></div>
+    <div class="search-container hidden">
+        <h1>Search your libary</h1>
+        <button class="cancel-btn">Cancel</button>
+    </div>
   </body>
 </html>
